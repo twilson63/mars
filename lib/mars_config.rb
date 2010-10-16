@@ -16,7 +16,7 @@ class MarsConfig
     FileUtils.mkdir_p File.join(@project, 'wwwroot')
     FileUtils.mkdir_p File.join(@project, 'tmp')
 
-    config_ru = ["require 'mars'","log = File.new('tmp/mars.log', 'a+')", "$stdout.reopen(log)", "$stderr.reopen(log)", "run Mercury"].join("\n")
+    config_ru = ["require 'mars'","log = File.new('tmp/mars.log', 'a+')", "$stdout.reopen(log)", "$stderr.reopen(log)", "run Mars::App"].join("\n")
     File.open(File.join(@project, 'config.ru'),'w').write(config_ru)
     gemfile = ['source :gemcutter', "gem 'thin'", "gem 'mars'"].join("\n")
     File.open(File.join(@project, 'Gemfile'),'w').write(gemfile)
