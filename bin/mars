@@ -10,7 +10,7 @@ version = ">= 0"
 if ARGV.first
   config = MarsConfig.new(ARGV)
   config.create_project
-#  config.apply_stack
+  config.apply_stack
   
   puts "***********************************"
   puts "* Thank you for choosing Mars! *"
