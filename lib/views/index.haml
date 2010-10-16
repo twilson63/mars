@@ -1,0 +1,40 @@
+:erb
+  <style type="text/css">
+
+:sass
+  #header-wrap
+    color: white
+  #header
+    h1
+      margin-left: 15px    
+  ul#pages
+    list-style: none
+    li
+      border: 2px solid gray
+      padding: 10px
+      font-size: 1.25em
+
+:erb
+  </style>
+
+
+#header-wrap  
+  #header.container_16
+    %h1 Mercury
+  
+#wrap.container_16
+  .grid_9.prefix_3
+    %p{:style => 'font-size:1.4em'}
+      Welcome to Mercury
+    %p{:style => 'font-size:1.4em'}
+      Mercury is built on top of the Sinatra Framework and allows you to build web sites and mockups using haml, sass, coffee-script, without having to write any ruby (if you don't want to :).  The purpose of mercury is to enable developers to put up quick prototypes using haml, sass, and coffee-script.  Often times a picture is one of the best ways to get user requirements before you start creating the application.  Some users really benefit from seeing and touching a working prototype to confirm their needs in a specific product.  
+    %p{:style => 'font-size:1.4em'}
+      Please send us a tweet or email and let us know what you think about the project!  
+    :markdown
+      [@jackhq](http://twitter.com/jackhq)
+      
+      or
+      
+      [mercury@jackhq.com](mailto:mercury@jackhq.com)
+
+

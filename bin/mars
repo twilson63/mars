@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'fileutils'
+require File.dirname(__FILE__) + '/../lib/mars_config.rb'
+
+version = ">= 0"
+
+  
+if ARGV.first
+  config = MarsConfig.new(ARGV)
+  config.create_project
+#  config.apply_stack
+  
+  puts "***********************************"
+  puts "* Thank you for choosing Mars! *"
+  puts "***********************************"
+  puts "* $ cd #{config.project}           "
+  puts "* $ mars         "  
+  puts "***********************************"
+  puts "* have fun....                     "
+  puts "***********************************"
+  puts "* Go to http://rdocs.info/mars  "
+  puts "* for more info "
+  puts "***********************************"
+
+else
+  puts "Running Mars on port:9292"
+  puts "Press Ctrl-C to exit"
+  # try to run in current directory
+  gem 'rack', version
+  load Gem.bin_path('rack', 'rackup', version)  
+end
