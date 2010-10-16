@@ -23,7 +23,7 @@ class MarsConfig
   end
   
   def apply_stack
-    
+    # Eventually adding stacks
     # if @stack == SENCHA
     #   FileUtils.cp_r File.dirname(__FILE__) + '/../lib/sencha/.', FileUtils.pwd + "/#{@project}/wwwroot"
     # elsif @stack == BLANK
@@ -31,6 +31,7 @@ class MarsConfig
     # else 
     #   FileUtils.cp_r File.dirname(__FILE__) + '/../lib/public/.', FileUtils.pwd + "/#{@project}/wwwroot"
     # end
+    FileUtils.cp_r File.dirname(__FILE__) + '/../lib/public/.', FileUtils.pwd + "/#{@project}/wwwroot"
   end
   
 end

@@ -1,53 +1,39 @@
-= Mars 
+# Mars 
 
-=== What is it?
+### What is it?
 
+Is a simple web framework "JUST FOR FUN", built using Sinatra, Ruby, and ERB.
 
-=== Technology
+### Why
 
-
-== Why
-
+To quickly create web sites or applications...
 
 Simply type: 
  
    mars {your project name}
 
 
-To run a mercury app:
+To run a mars app:
 
     cd into your project folder and type:
     
     mars
     
-Keeping it this simple allows users to start building right away!
- 
-
-== Install
+## Install
 
     gem install mars
 
 
-== Create a mercury project
+## Create a mercury project
 
     # Create a new folder for your project
     
     mars {project}
     
-    # Create your haml files
-    
-    cd {project}
-    
-    cd wwwroot
-    
-    touch test.haml
 
-===
-    
-    # then create a erb page
-    
-    touch test.erb
-    
+## Create a layout and index page
+
+    cd {project}
   
 ===Run Server
     
